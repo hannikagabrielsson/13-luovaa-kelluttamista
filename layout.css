@@ -1,0 +1,70 @@
+
+
+html {
+    font-size: 62,5%;
+    }
+
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 400px;
+  border: solid 1px black;
+  border-radius: 1.2rem;
+  background-image: linear-gradient(to bottom right, gainsboro, white);
+  padding: 1em;
+
+}
+
+.container .heading, .container .text {
+  float: right;
+  width: 70%;
+  box-sizing: border-box;
+  padding-block-end: 15px;
+}
+
+.container .heading h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.container .text p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+
+.container .image {
+  float: left;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.container .image img {
+  padding: 5px;
+  border-top: solid 1px lightgray;
+  border-left: solid 1px lightgray;
+  border-right: solid 1px darkgray;
+  border-bottom: solid 1px darkgray;
+  background-color: white;
+  box-shadow: 6px 6px darkgray;
+  max-width: 100%;
+}
+
+
+.reverse .heading, .reverse .text {
+  float: left;
+}
+
+.reverse .image {
+  float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
