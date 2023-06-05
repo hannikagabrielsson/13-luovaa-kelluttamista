@@ -6,11 +6,13 @@ html {
 
 body {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
 }
 
 .container {
   box-sizing: border-box;
-  width: 400px;
+  width: 100%;
   border: solid 1px black;
   border-radius: 1.2rem;
   background-image: linear-gradient(to bottom right, gainsboro, white);
@@ -20,9 +22,10 @@ body {
 
 .container .heading, .container .text {
   float: right;
-  width: 70%;
+  width: 80%;
   box-sizing: border-box;
   padding-block-end: 15px;
+  padding-left: 1rem;
 }
 
 .container .heading h1 {
@@ -38,7 +41,7 @@ body {
 
 .container .image {
   float: left;
-  width: 30%;
+  width: 20%;
   box-sizing: border-box;
 }
 
@@ -56,10 +59,14 @@ body {
 
 .reverse .heading, .reverse .text {
   float: left;
+  padding-right: 0.5rem;
+  padding-left: 0;
+  width: 80%;
 }
 
 .reverse .image {
   float: right;
+  width: 20%;
 }
 
 .clearfix:after {
@@ -68,3 +75,28 @@ body {
     clear: both;
 }
 
+@media only screen and (max-width: 425px) {
+  body {
+    margin: 0;
+  }
+
+  .container {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    min-width: 320px;
+    padding: 10px;
+  }
+
+  .container .heading, .container .text {
+    padding-left: 1.5rem;
+  }
+  .reverse .heading, .reverse .text {
+    padding-left: 0;
+  }
+
+  .reverse .image {
+    padding-right: 1rem;
+  }
+}
