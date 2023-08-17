@@ -75,6 +75,7 @@ body {
     clear: both;
 }
 
+
 @media only screen and (max-width: 425px) {
   body {
     margin: 0;
